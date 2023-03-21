@@ -1,9 +1,5 @@
 function printAll(strs: string | string[] | null) {
-  if (typeof strs === "object") {
-    if (strs === null) {
-      console.log(strs)
-      return
-    }
+  if (strs && typeof strs === "object") {
     for (const s of strs) {
       console.log(s)
     }
